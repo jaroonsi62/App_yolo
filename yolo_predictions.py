@@ -95,7 +95,7 @@ class YOLO_Pred():
                 cv2.rectangle(image,(x,y),(x+w,y+h),colors,2)
                 cv2.rectangle(image,(x,y-30),(x+w,y),colors,-1)
 
-                cv2.putText(image,text,(x,y-10),cv2.FONT_HERSHEY_PLAIN,0.7,(0,0,0),1)
+                cv2.putText(image,text,(x,y-10),cv2.FONT_HERSHEY_DUPLEX,0.7,(0,0,0),1)
                 obj_box.append([x,y,x+w,y+h,class_name,bb_conf])
             
         return image,obj_box
