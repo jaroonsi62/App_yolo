@@ -30,7 +30,7 @@ if img_file is not None:
                     av.append(sum_conf[u]/cont_obj[u])
                 except ZeroDivisionError :
                     av.append(0)
-            text_obj = 'เห็ดที่ตรวจพบ'
+            text_obj = 'เห็ดที่ตรวจพบ : ' + name[av.index(max(av))]
         else:
             text_obj = 'ไม่พบชนิดของเห็ด'
 ##        obj_names = ''
