@@ -28,8 +28,8 @@ if img_file is not None:
             for u in range(len(sum_conf)):
                 try:
                     av.append(sum_conf[u]/cont_obj[u])
-                    except ZeroDivisionError :
-                        av.append(0)
+                except ZeroDivisionError :
+                    av.append(0)
             text_obj = 'เห็ดที่ตรวจพบ'
         else:
             text_obj = 'ไม่พบชนิดของเห็ด'
