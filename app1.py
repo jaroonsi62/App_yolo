@@ -31,8 +31,8 @@ if img_file is not None:
                 except ZeroDivisionError :
                     av.append(0)
             text_obj = 'เห็ดที่ตรวจพบ : ' + name[av.index(max(av))]
-        else:
-            text_obj = 'ไม่พบชนิดของเห็ด'
+    else:
+        text_obj = 'ไม่พบชนิดของเห็ด'
     #----------------------------------------------
     st.header(text_obj)
     st.image(pred_image, caption='ภาพ Output',channels="BGR")
