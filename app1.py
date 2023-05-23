@@ -33,12 +33,6 @@ if img_file is not None:
             text_obj = 'เห็ดที่ตรวจพบ : ' + name[av.index(max(av))]
         else:
             text_obj = 'ไม่พบชนิดของเห็ด'
-##        obj_names = ''
-##        for obj in obj_box:
-##            obj_names = obj_names + obj[4] + ' '
-##        text_obj = 'ตรวจพบ ' + obj_names
-##    else:
-##        text_obj = 'ไม่พบชนิดของเห็ด'
     #----------------------------------------------
     st.header(text_obj)
     st.image(pred_image, caption='ภาพ Output',channels="BGR")
